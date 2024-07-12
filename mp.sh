@@ -185,6 +185,7 @@ function install_helm {
     --kube-context "${mp_cluster_name}" \
     --namespace "tsb" \
     --values "${mp_output_dir}/mp-helm-values.yaml" \
+    --version "${TSB_VERSION}" \
     --wait ;
 
   # Wait for the management plane deployments to become available
